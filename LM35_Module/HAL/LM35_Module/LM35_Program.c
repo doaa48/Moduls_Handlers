@@ -28,7 +28,7 @@ void LM35_VoidInit()
 }
 
 u16 LM35_u16GetTempretureWithUnit(u16 Copy_u16DigitalVoltage,Degree_Unit Copy_enumUnit)
-{f32 Local_f32Temprature=(Copy_u16DigitalVoltage*ADC_STEP)/10.0;
+{f32 Local_f32Temprature=(Copy_u16DigitalVoltage*1000*ADC_STEP)/10.0;
  u16 Local_u8State=RT_OK;
 	switch(Copy_enumUnit)
 	{
